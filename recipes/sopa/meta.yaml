@@ -1,5 +1,5 @@
 {% set name = "sopa" %}
-{% set version = "2.0.6" %}
+{% set version = "2.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sopa-{{ version }}.tar.gz
-  sha256: bd3415d391762e38581dda86a5292f858a0415b482719d0131d663703e18f77d
+  sha256: 1c47457d788f6a38eee646ba9d078d2ae021005b84bbb5d9f8c270f9058b21f5
 
 build:
   entry_points:
@@ -33,6 +33,7 @@ requirements:
     - typer >=0.9.0
     - opencv >=4.8.0
     - dask-core >=2024.4.1
+    - click <8.2.0
 
 test:
   imports:

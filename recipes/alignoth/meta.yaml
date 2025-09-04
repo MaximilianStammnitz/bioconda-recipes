@@ -1,5 +1,5 @@
 {% set name = "alignoth" %}
-{% set version = "0.14.3" %}
+{% set version = "0.16.3" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/alignoth/alignoth/archive/v{{ version }}.tar.gz
-  sha256: d81e738555a2d0be5a3ab93eafcd3bfed97aaaca90bc699d965e21182ce46c84
+  sha256: fb9d9e4240a678e84aff84f414dc68bc13b8ade5dfc7c90d1a67ce6425175fc9
 
 build:
   number: 0
